@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-eval'; 
+        style-src 'self' 'unsafe-inline'; 
+        media-src *; 
+        img-src 'self' * data: content:; connect-src *;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link href="css/tinyshell.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Hello World</title>
+</head>
+
+<body>
+
+
+
+
+    <!--FIRST PAGE  - REVIEW PAGE-->
+    <div class="page active" id="reviewList">
+        <nav class="bar-half top">
+            <a href="#" class="link left"></a>
+            <a href="#addItems" class="link right icon add" id="addButton">Add</a>
+        </nav>
+
+        <section class="content" id="reviewId">
+
+            <header>
+                <h3>REVIEW PAGE</h3>
+            </header>
+            <div class="overlay" id="message">
+                <section class="messages">
+                    <h1 id="info">Message</h1>
+                </section>
+            </div>
+
+
+            <div class="overlay" id="secondMessage">
+                <section class="messages">
+                    <h1 id="mes">Mes</h1>
+                </section>
+            </div>
+
+            <ul class="list-view">
+
+
+
+            </ul>
+
+        </section>
+    </div>
+
+
+    <!--THIRD  DETAILS PAGE-->
+
+    <div class="page" id="DetailsPage">
+        <nav class="bar-half top">
+            <a href="#list" class="link left icon arrow_left" id="backbtn">Back</a>
+            <a href="#list" class="link right icon delete" id="deletebtn">Delete</a>
+        </nav>
+
+
+        <section class="content">
+
+            <div class="overlay" id="message">
+
+                <section class="messages">
+                    <h1 id="msg"></h1>
+
+                </section>
+            </div>
+
+            <header>
+                <h3> DETAILS PAGE</h3>
+            </header>
+           
+
+
+        </section>
+
+
+    </div>
+
+
+    <!--SECOND INPUT PAGE-->
+
+    <div class="page" id="addReview">
+        <nav class="bar-half top">
+            <a href="#list" class="link left icon cancel" id="cancelbtn">Cancel</a>
+            <a href="#list" class="link right icon save" id="savebtn">Save</a>
+        </nav>
+
+        <section class="content">
+
+            <div class="overlay" id="displayInfo">
+
+            </div>
+
+            <form>
+                <p class="form-row">
+                    <input type="text" id="nm" placeholder="Enter Name" required/>
+                    <label for="nm"></label>
+                </p>
+
+                <div class="cameraDiv" id="btn-small">
+
+                    <p><img src="img/logo.png" alt="picture" id="photo" /></p>
+                    <p id="msg"></p>
+
+                    <span class="icon camera"></span>
+                </div>
+
+                <div class="stars" data-rating="3">
+                    <span class="star">&nbsp;</span>
+                    <span class="star">&nbsp;</span>
+                    <span class="star">&nbsp;</span>
+                    <span class="star">&nbsp;</span>
+                    <span class="star">&nbsp;</span>
+                </div>
+            </form>
+
+
+        </section>
+
+
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/tinyshell.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand|EB+Garamond");
+
+/************DEFAULTS***************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+}
+
+.firstPage {
+    display: none;
+}
+
+.page {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.reviewBtn {
+    display: block;
+}
+
+a.link,
+nav a {
+    color: black !important;
+}
+
+.overlay {
+    color: white;
+    padding-top: 28%;
+    padding-right: 5%;
+    text-align: center;
+    display: none;
+    background-color: darkgray;
+    position: absolute;
+}
+
+.stars {
+    color: goldenrod;
+    font-size: 1.3rem;
+    padding: 0.1rem;
+}
+
+.star::before {
+    content: '\2606';
+    cursor: pointer;
+}
+
+.star.rated::before {
+    content: '\2605';
+}
+
+.hidden {
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+img.imgSmall {
+    width: 4rem;
+}
+
+#reviewId {
+    background-color: blanchedalmond;
+}
+
+.card {
+    background-color: beige;
+    width: auto;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.card p {
+    color: darkred;
+    font-size: 2rem;
+    font-family: "EB Garamond", "Times New Roman", Georgia, serif;
+    text-align: center;
+    line-height: normal;
+}
+
+#usediv {
+    background-color: beige;
+    width: auto;
+    height: auto;
+    border: 25px solid blanchedalmond;
+    
+}
+
+.list-item p,
+img {
+    font-size: 1.5rem;
+    padding: 0.5rem 3rem 0;
+    text-overflow: clip;
+    font-weight: 500;
+    line-height: 1;
+    min-height: 3.5rem;
+    text-align: center;
+}
+
+.list-item .stars {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+input#nm {
+    font-size: 1rem;
+    background-color: blanchedalmond;
+    border: 1px solid #C2ACA9;
+}
+
+.icon.camera {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#addReview .stars {
+    font-size: 1rem;
+}
+
+.bar-half {
+    background-color: #EE9E3C;
+    position: absolute;
+}
+
+p#name {
+    color: darkred;
+    font-family: "EB Garamond", "Times New Roman", Georgia, serif;
+}
+
+#secondMessage{
+    background-color: transparent;
+    color:black;
+}
